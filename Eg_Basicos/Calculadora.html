@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Calculadora</title>
+    <style>
+      /*aspectos generales: bordes y color de fondo de calculadora*/
+      .calculadora { border: 3px #22f200 ridge; width: 250px;
+                     text-align: center; background-color: #91a9b6; }
+
+      /*pantalla de visualización: bordes, posición, color de fondo, estilo letra.*/
+      #textoPantalla { width: 185px; border: 2px #156505 solid; text-align: right;
+                     position: relative; left: 23px;  padding: 0px 5px;
+                     background-color: white; font-family: "arial";
+                     overflow: hidden;}
+
+      /*botones normales: anchura y margen*/
+      .calculadora [type=button] { width: 40px; padding: 0;  }
+      /*botones especiales*/
+      .calculadora input.largo { color: red; width: 60px; }
+    </style>
+  </head>
+  <body>
+    <div class="calculadora"
+      <form action="#" name="calculadora" id="calculadora">
+      <p id="textoPantalla">0</p>
+      <p>
+        <input type="button" class="largo" value="Retr" />
+        <input type="button" class="largo" value="CE" />
+        <input type="button" class="largo" value="C" />
+        </p>
+      <p>
+        <input type="button" value="7" />
+        <input type="button" value="8" />
+        <input type="button" value="9" />
+        <input type="button" value="/"  />
+        <input type="button" value="√" />
+      </p>
+      <p>
+        <input type="button" value="4" />
+        <input type="button" value="5" />
+        <input type="button" value="6" />
+        <input type="button" value="*" />
+        <input type="button" value="%" />
+      </p>
+      <p>
+        <input type="button" value="1" />
+        <input type="button" value="2" />
+        <input type="button" value="3" />
+        <input type="button" value="-" />
+        <input type="button" value="n/d" />
+      </p>
+      <p>
+        <input type="button" value="0" />
+        <input type="button" value="mod" />
+        <input type="button" value="." />
+        <input type="button" value="+" />
+        <input type="button" value="="/>
+      </p>
+      </form>
+    </div>
+    <script src="calculadora.js"> </script>
+  </body>
+</html>
